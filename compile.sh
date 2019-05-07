@@ -2,9 +2,9 @@
 
 LORA_GATEWAY_DRIVER_PATH=../lora_gateway
 
-TARGET_IP_ADDRESS=192.168.0.1
-TARGET_PATH=/home/pi/lora-net
-TARGET_USER=pi
+TARGET_IP_ADDRESS=10.0.0.19
+TARGET_PATH=/home/byunet/lora-net
+TARGET_USER=byunet
 
 clean_all() {
     make clean -C $LORA_GATEWAY_DRIVER_PATH

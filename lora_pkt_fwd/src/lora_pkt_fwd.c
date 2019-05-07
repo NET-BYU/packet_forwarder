@@ -2522,7 +2522,7 @@ void thread_down(void) {
                 }
                 if (i == txlut.size) {
                     /* this RF power is not supported */
-                    jit_result = JIT_ERROR_TX_POWER;
+                    //jit_result = JIT_ERROR_TX_POWER;
                     MSG("ERROR: Packet REJECTED, unsupported RF power for TX - %d\n", txpkt.rf_power);
                 }
             }
