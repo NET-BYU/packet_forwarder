@@ -1701,7 +1701,8 @@ void thread_up(void) {
                         MSG("ERROR: [up] lora packet with unknown datarate\n");
                         memcpy((void *)(buff_up + buff_index), (void *)",\"datr\":\"SF?", 12);
                         buff_index += 12;
-                        exit(EXIT_FAILURE);
+                        //exit(EXIT_FAILURE);
+			break;
                 }
                 switch (p->bandwidth) {
                     case BW_125KHZ:
