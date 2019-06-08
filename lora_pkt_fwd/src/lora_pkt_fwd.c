@@ -1701,7 +1701,7 @@ void thread_up(void) {
                         MSG("ERROR: [up] lora packet with unknown datarate\n");
                         memcpy((void *)(buff_up + buff_index), (void *)",\"datr\":\"SF?", 12);
                         buff_index += 12;
-                        //exit(EXIT_FAILURE);
+                        exit(EXIT_FAILURE);//Only a hardware reset can recover us now.
 			break;
                 }
                 switch (p->bandwidth) {
